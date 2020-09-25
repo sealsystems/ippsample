@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - './test:/config'
+      - './tools:/tools'
       - './data/print:/print'
       - './data/spool:/spool'
     command: ippserver -C /config -r _print
